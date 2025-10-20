@@ -43,3 +43,4 @@
         <p>Aucun utilisateur trouvé dans la base de données.</p>
     </c:otherwise>
 </c:choose>
+<a href="index.jsp">Retour à l'accueil</a>

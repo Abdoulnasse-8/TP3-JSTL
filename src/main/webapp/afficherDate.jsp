@@ -3,11 +3,16 @@
 
 <html>
 <head>
-    <title>Date et Heure</title>
+    <title>Date et heure</title>
 </head>
 <body>
-    <h2>Date et heure actuelles :</h2>
-    <fmt:formatDate value="${now}" pattern="dd/MM/yyyy HH:mm:ss" var="currentDate" />
-    <p><fmt:formatDate value="${currentDate}" pattern="EEEE, dd MMMM yyyy HH:mm:ss"/></p>
+    <h2>Date et heure actuelles</h2>
+
+    <p>
+        <fmt:formatDate value="<%= new java.util.Date() %>" pattern="dd/MM/yyyy HH:mm:ss"/>
+    </p>
+
+    <br>
+    <a href="index.jsp">Retour à l'accueil</a>
 </body>
 </html>
